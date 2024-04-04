@@ -1,6 +1,6 @@
 {
-  "name": "systemd-journald",
-  "version": "2.0.0",
+  "name": "@mikelpr/systemd-journald",
+  "version": "2.0.1",
   "description": "Native bindings to journald",
   "keywords": [
     "logging",
@@ -14,7 +14,7 @@
   "types": "types/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jue89/node-systemd-journald.git"
+    "url": "https://github.com/mikelpr/node-systemd-journald.git"
   },
   "directories": {
     "test": "test"
