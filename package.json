@@ -8,8 +8,10 @@
     "journald"
   ],
   "author": "Jue <me@jue.yt>",
+  "contributors": ["Mikel Pérez <io@mikelpr.com>"],
   "license": "MIT",
   "main": "index.js",
+  "types": "types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/jue89/node-systemd-journald.git"
