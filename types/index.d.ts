@@ -1,23 +1,24 @@
-declare module "systemd-journald" {
+declare module 'systemd-journald' {
   // https://man7.org/linux/man-pages/man7/systemd.journal-fields.7.html
-  export type JournalFields = {
-    message_id?: string,
-    code_file?: string,
-    code_line?: string,
-    code_func?: string,
-    errno?: string,
-    invocation_id?: string,
-    user_invocation_id?: string,
-    syslog_facility?: string,
-    syslog_identifier?: string,
-    syslog_pid?: string,
-    syslog_timestamp?: string,
-    syslog_raw?: string,
-    documentation?: string,
-    tid?: string,
-    unit?: string,
-    user_unit?: string
-  }
+  export type JournalFields = Partial<{
+    message_id: string,
+    code_file: string,
+    code_line: string,
+    code_func: string,
+    errno: string,
+    invocation_id: string,
+    user_invocation_id: string,
+    syslog_facility: string,
+    syslog_identifier: string,
+    syslog_pid: string,
+    syslog_timestamp: string,
+    syslog_raw: string,
+    documentation: string,
+    tid: string,
+    unit: string,
+    user_unit: string,
+    [custom_field: string]: string
+  }>
 
   export default class systemd_journald {
     constructor(defaultFields: JournalFields);
